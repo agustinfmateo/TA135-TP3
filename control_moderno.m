@@ -238,6 +238,6 @@ eig(A_cl)
 B1 = (I4-Ld*Cd)*Bd;  B2 = Ld;
 Acx = Aodd - B1*Kd;
 Ctrl = ss(Acx, B2, -Kd*Acx, -Kd*B2, Ts);   % theta[k] -> u[k]
-bode(Ctrl); grid on
 
-close all
+figure;
+bode(Ctrl); grid on
